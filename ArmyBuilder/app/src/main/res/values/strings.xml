@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">ARMY BUILDER</string>
+    <string name="army_name">Army Name:</string>
+    <string name="total_point">TOTAL POINTS</string>
+    <string name="tab_text_1">HQ</string>
+    <string name="tab_text_2">Elite</string>
+    <string name="tab_text_3">Troop</string>
+    <string name="tab_text_4">Fast Attack</string>
+    <string name="tab_text_5">Heavy Support</string>
+    <string name="tab_text_6">Home</string>
+    <string name="cal_total">Calculate Total</string>
+    <string name="save">SAVE</string>
+    <string name="load">LOAD</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">Name of army</string>
+
+    <string name="about">About this App</string>
+    <string name="how_to">How to use this app</string>
+    <string name="using">Thank you for using this app\nEach tab here represent a unit type which can be used in your war games. \nKey: \nWS: Weapon Skill \nBS: Ballistic Skill \nS: Strength\nT: Toughness \nW: Wounds \nA: Attacks \nLd: Leadership \nSv: Save \nAP: Armour Penetration \nUse the save and load buttons to continue using your army after closing this app. \nUse the calculate total button to add up your point cost for that tab</string>
+
+    <string name="tab_entry_u">UNIT</string>
+    <string name="unit_value_WS">WS</string>
+    <string name="unit_value_BS">BS</string>
+    <string name="unit_value_S">S </string>
+    <string name="unit_value_T"> T </string>
+    <string name="unit_value_W"> W </string>
+    <string name="unit_value_I"> I </string>
+    <string name="unit_value_A">A </string>
+    <string name="unit_value_Ld">Ld</string>
+    <string name="unit_value_Sv">Sv</string>
+    <string name="notes_column">NOTES</string>
+    <string name="points_column">POINTS</string>
+
+    <string name="tab_entry_v">VEHICLE</string>
+    <string name="vehicle_value_A">ARMOUR</string>
+    <string name="vehicle_value_F">Front</string>
+    <string name="vehicle_value_S">Side</string>
+    <string name="vehicle_value_R">Rear</string>
+
+    <string name="notes_column_vehicle">TYPE AND NOTES</string>
+
+    <string name="tab_entry_weap">WEAPON</string>
+    <string name="weapon_value_R">Range</string>
+    <string name="weapon_value_S">Strength</string>
+    <string name="weapon_value_AP">AP</string>
+    <string name="weapon_value_T">Type</string>
+
+    <string name="tab_entry_walk">WALKER</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>

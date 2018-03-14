@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9A9A9">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:text = "@string/tab_text_1"
+        android:textSize="20sp"
+        android:id="@+id/textTabHQ"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textTabHQ"
+        android:layout_toEndOf="@id/textTabHQ"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="30dp"
+        android:text = "@string/army_name"
+        android:textSize="15sp"
+        android:id="@+id/text_army_name"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="40dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/text_army_name"
+        android:layout_toEndOf="@id/text_army_name"
+        android:inputType="text"
+        android:id="@+id/V_army_name"
+        android:hint="@string/hint"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTabHQ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:stretchColumns="1, 11">
+
+        <TableRow>
+        <!--Text Row of Unit-->
+            <TextView
+                android:layout_column="1"
+                android:text="@string/tab_entry_u"/>
+
+            <TextView
+                android:layout_column="2"
+                android:text="@string/unit_value_WS"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="3"
+                android:text="@string/unit_value_BS"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="4"
+                android:text="@string/unit_value_S"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="5"
+                android:text="@string/unit_value_T"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="6"
+                android:text="@string/unit_value_W"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="7"
+                android:text="@string/unit_value_I"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="8"
+                android:text="@string/unit_value_A"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="9"
+                android:text="@string/unit_value_Ld"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="10"
+                android:text="@string/unit_value_Sv"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="11"
+                android:text="@string/notes_column"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="12"
+                android:text="@string/points_column"
+                android:padding="2dp"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row 1 of Unit-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/UnitHQ_Name1"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_WS1"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_BS1"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_S1"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_T1"/>
+            <EditText
+                android:layout_column="6"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_W1"/>
+            <EditText
+                android:layout_column="7"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_I1"/>
+            <EditText
+                android:layout_column="8"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_A1"/>
+            <EditText
+                android:layout_column="9"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_Ld1"/>
+            <EditText
+                android:layout_column="10"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_Sv1"/>
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/UnitHQ_Note1"/>
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/UnitHQPoints1"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row 2 of Unit-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/UnitHQ_Name2"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_WS2"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_BS2"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_S2"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_T2"/>
+            <EditText
+                android:layout_column="6"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_W2"/>
+            <EditText
+                android:layout_column="7"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_I2"/>
+            <EditText
+                android:layout_column="8"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_A2"/>
+            <EditText
+                android:layout_column="9"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_Ld2"/>
+            <EditText
+                android:layout_column="10"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/UnitHQ_Sv2"/>
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/UnitHQ_Note2"
+                />
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/UnitHQPoints2"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Text Row of Vehicle-->
+            <TextView
+                android:layout_column="1"
+                android:text="@string/tab_entry_v"/>
+
+            <TextView
+                android:layout_column="2"
+                android:text="@string/vehicle_value_F"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="3"
+                android:text="@string/vehicle_value_S"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="4"
+                android:text="@string/vehicle_value_R"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="5"
+                android:text="@string/unit_value_BS"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="11"
+                android:text="@string/notes_column_vehicle"
+                android:padding="2dp"
+                />
+
+            <TextView
+                android:layout_column="12"
+                android:text="@string/points_column"
+                android:padding="2dp"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row of Vehicle-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/VehicleHQ_Name1"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/VehicleHQ_F1"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/VehicleHQ_S1"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/VehicleHQ_R1"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/VehicleHQ_BS1"/>
+
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/VehicleHQ_Note1"/>
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/VehicleHQPoints1"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Text Row of Weapon-->
+            <TextView
+                android:layout_column="1"
+                android:text="@string/tab_entry_weap"/>
+
+            <TextView
+                android:layout_column="2"
+                android:text="@string/weapon_value_R"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="3"
+                android:text="@string/weapon_value_S"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="4"
+                android:text="@string/weapon_value_AP"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="5"
+                android:text="@string/weapon_value_T"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_column="11"
+                android:text="@string/notes_column"
+                android:padding="2dp"
+                />
+
+            <TextView
+                android:layout_column="12"
+                android:text="@string/points_column"
+                android:padding="2dp"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row 1 of Weapon-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Name1"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_R1"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_S1"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_AP1"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_T1"/>
+
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Note1"/>
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/WeapHQPoints1"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row 2 of Weapon-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Name2"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_R2"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_S2"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_AP2"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_T2"/>
+
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Note2"/>
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/WeapHQPoints2"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row 3 of Weapon-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Name3"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_R3"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_S3"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_AP3"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_T3"/>
+
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Note3"/>
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/WeapHQPoints3"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <!--Input Row 4 of Weapon-->
+            <EditText
+                android:layout_column="1"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Name4"/>
+
+            <EditText
+                android:layout_column="2"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_R4"/>
+            <EditText
+                android:layout_column="3"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_S4"/>
+            <EditText
+                android:layout_column="4"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_AP4"/>
+            <EditText
+                android:layout_column="5"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="numberSigned"
+                android:id="@+id/WeapHQ_T4"/>
+
+            <EditText
+                android:layout_column="11"
+                android:text=""
+                android:padding="2dp"
+                android:inputType="text"
+                android:id="@+id/WeapHQ_Note4"/>
+            <EditText
+                android:layout_column="12"
+                android:text=""
+                android:padding="2dp"
+                android:id="@+id/WeapHQPoints4"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_column="1"
+                android:text="@string/cal_total"
+                android:id="@+id/HQ_Cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#006400"
+                android:textColor="#009900"
+                />
+
+            <TextView
+                android:layout_column="11"
+                android:text="@string/total_point"
+                android:padding="2dp"
+                />
+
+            <TextView
+                android:layout_column="12"
+                android:padding="2dp"
+                android:id="@+id/total_HQ_points"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_column="11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/HQSave"
+                android:text="@string/save"
+                android:background="#006400"
+                android:textColor="#009900"
+
+                />
+
+            <Button
+                android:layout_column="12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/HQLoad"
+                android:text="@string/load"
+                android:background="#006400"
+                android:textColor="#009900"
+
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
