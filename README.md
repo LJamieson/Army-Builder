@@ -1,2 +1,0 @@
-# jamieson_lewis_set08114_coursework
-Army Builder Coursework
